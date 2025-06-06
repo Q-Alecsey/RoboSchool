@@ -179,7 +179,25 @@ body{
 /* Perspectives */
 
 .perspectives{
-    margin-top:220px;
+    margin-top:200px;
+}
+
+.perspectives::before{
+    content:"";
+    background-color:#F9F9F9;
+    
+    position: absolute;
+    width:100%;
+    left:50%;
+    transform: translateX(-50%);
+
+    height:400px;
+    z-index:1;
+}
+
+.perspectives__wrapper{
+    position: relative;
+    z-index:10;
 }
 
 .perspectives__list{
@@ -194,6 +212,8 @@ body{
     font-weight: 600;
     font-size: 50px;
     line-height: 1.6;
+
+    padding-top:50px;
 }
 
 .perspectives__item h2{
@@ -273,7 +293,7 @@ body{
 /* trainers */
 
 .trainers{
-    margin-top:120px;
+    margin-top:150px;
 }
 
 .trainers__title{
@@ -292,10 +312,16 @@ body{
     overflow-x:auto;
 }
 
+.trainers__slider::-webkit-scrollbar{
+    display: none;
+}
+
 .trainers__person{
-    min-width: 100vw;
+    min-width: 30vw;
     height:100vh;
 }
+
+
 
 .trainers__person-prof{
     font-family: Jost;

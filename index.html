@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css"/>
     <title>Robo School</title>
+
+    <script src="./source/index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -25,7 +27,7 @@
                     по робототехнике<br> для педагогов 
                     начальной школы
                 </p>
-                <button class="main__header-button">Записаться на курс</button>
+                <button id="btn" class="main__header-button">Записаться на курс</button>
             </div>
             <div class="main__header-photos">
                 <img class="main__header-white_circle" src="images/header/white-circle.png" alt="circle.png">
@@ -74,40 +76,42 @@
             </section>
 
             <section class="perspectives">
-                <h1>Что вы получите после курса</h1>
+                <div class="perspectives__wrapper">
+                    <h1>Что вы получите после курса</h1>
 
-                <div class="perspectives__list">
-                    <div class="perspectives__item">
-                        <h2>Удостоверение</h2>
-                        <p>Дающее право преподавать 
-                            робототехнику для детей 6-12 лет 
-                            в образовательных учреждениях
-                        </p>
-                    </div>
+                    <div class="perspectives__list">
+                        <div class="perspectives__item">
+                            <h2>Удостоверение</h2>
+                            <p>Дающее право преподавать 
+                                робототехнику для детей 6-12 лет 
+                                в образовательных учреждениях
+                            </p>
+                        </div>
 
-                    <div class="perspectives__item">
-                        <h2>Знания</h2>
-                        <p>По основам разработки 
-                            учебно-методических комплексов
-                            по робототехнике и программированию
-                        </p>
-                    </div>
+                        <div class="perspectives__item">
+                            <h2>Знания</h2>
+                            <p>По основам разработки 
+                                учебно-методических комплексов
+                                по робототехнике и программированию
+                            </p>
+                        </div>
 
-                    <div class="perspectives__item">
-                        <h2 class="perspectives__item-special">Практику
-                            <div class="perspectives__item-image">
-                                <img src="./images/perspectives/i.svg" alt="">
-                                <div class="perspectives__item-tooltip">
-                                    <h3>При наличии свободных мест</h3>
+                        <div class="perspectives__item">
+                            <h2 class="perspectives__item-special">Практику
+                                <div class="perspectives__item-image">
+                                    <img src="./images/perspectives/i.svg" alt="">
+                                    <div class="perspectives__item-tooltip">
+                                        <h3>При наличии свободных мест</h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </h2>
-                        <p>Возможность пройти практику 
-                            по преподаванию робототехники на базе 
-                            R:ED LAB (в оффлайн или онлайн формате)
-                        </p>
-                    </div>
+                            </h2>
+                            <p>Возможность пройти практику 
+                                по преподаванию робототехники на базе 
+                                R:ED LAB (в оффлайн или онлайн формате)
+                            </p>
+                        </div>
 
+                    </div>
                 </div>
             </section>
 
