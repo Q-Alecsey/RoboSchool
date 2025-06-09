@@ -1,7 +1,7 @@
-//
 
-function func() {
-    alert("oh yeah");
-}
+let swiper = new Swiper('.tr');
 
-document.getElementById("btn").onclick = func;
+const new_swiper = document.querySelector('.swiper');
+
+console.log(new_swiper);
+

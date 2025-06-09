@@ -307,21 +307,15 @@ body{
 
 /* SLIDER */
 
-.trainers__slider{
+.swiper__wrapper{
     display:flex;
     overflow-x:auto;
 }
 
-.trainers__slider::-webkit-scrollbar{
-    display: none;
-}
-
 .trainers__person{
-    min-width: 30vw;
-    height:100vh;
+    min-width: 29vw;
+    min-height: 100vh;
 }
-
-
 
 .trainers__person-prof{
     font-family: Jost;
