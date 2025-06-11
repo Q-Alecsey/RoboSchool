@@ -307,17 +307,18 @@ body{
 
 /* SLIDER */
 
-.swiper-wrapper{
-    margin-bottom:77px;
-}
-
-.trainers__swiper-tools{
+.trainers__slider{
     display:flex;
     justify-content: space-between;
 }
 
-.swiper-scrollbar-horizontal{
-    background-color: #D52027;
+.trainers__slider::-webkit-scrollbar{
+    display: none;
+}
+
+.trainers__person{
+    min-width: 30vw;
+    height:100vh;
 }
 
 .trainers__person-prof{
