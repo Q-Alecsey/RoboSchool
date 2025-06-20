@@ -1,0 +1,177 @@
+
+
+.trainers__dialog{
+    position: fixed;
+    top:0px;
+    left:0px;
+
+    width:100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 100;
+    overflow-y:scroll;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.7s , 
+                visibility 0.7s;
+}
+
+.trainers__dialog.trainers__dialog-on{
+    visibility: visible;
+    opacity: 1;
+}
+
+.trainers__dialog-wrapper{
+    position: absolute;
+    left:20%;
+
+    padding:40px;
+    width:850px;
+
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    margin: 50px 0;
+}
+
+/* Dialog__Header */
+
+.dialog__header{
+    display:flex;
+    gap:40px;
+}
+
+.dialog__header img {
+    width:200px;
+    height: 278px;
+}
+
+.dialog__header-info h3{
+    font-family: Jost, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    color:#141024;
+}
+
+.dialog__header-info p{
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #141024B2;
+    margin:10px 0;
+}
+
+.dialog__header-info-social{
+    display: flex;
+    gap:10px;
+}
+
+.facebook path,
+.instagram path{
+    transition: 0.5s ease;
+}
+
+.facebook:hover
+.svg_facebook{
+    fill :#D52027;
+}
+
+.instagram:hover
+.svg_instagram{
+    fill :#D52027;
+}
+
+.dialog__header-close{  
+    width:64px;
+    height: 29px;
+
+    margin-left:auto;
+
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+
+    color:#141024B2;
+}
+
+.dialog__header-close:hover{
+    color:#D52027;
+}
+
+/* Dialog__tabs */
+
+.dialog__tabs{
+    display:flex;
+    gap:180px;
+
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: #d8d5d5 solid 1px;
+}
+
+.dialog__tabs-item{
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+    
+    color:#14102433;
+    transition: 0.6s ease;
+}
+
+.dialog__tabs-item:hover{
+    color:#141024;
+}
+
+.dialog__tabs-item.active{
+    color:#D52027;
+}
+
+/* Dialog -- content*/
+
+.dialog__experience, .dialog__awards{
+    display:none; 
+}
+
+.dialog__education, .dialog__experience , .dialog__awards{
+    margin-top:15px;
+}
+
+.dialog__education{
+    height:300px;
+    overflow-y:scroll;
+}
+
+.dialog__education-content{
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+
+    color:#141024;
+    margin:30px 0 40px 0;
+}
+
+.dialog__title{
+    font-family: Jost;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.6;
+
+    color:#141024;
+    margin-bottom:20px;
+}
+
+.dialog__experience, .dialog__awards{
+    margin:30px 0 40px 0;
+}
