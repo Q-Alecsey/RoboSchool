@@ -5,6 +5,26 @@
     .container{
         max-width: 950px;
     }
+
+    .count{
+        flex-wrap:wrap;
+    }
+
+    .count div{
+        width:400px;
+    }
+
+    .course__form input{
+        width:80%;
+    }
+
+    .course__form-button{
+        width:80%;
+    }
+
+    .course__footer form{
+        align-items: center;
+    }
 }
 
 @media (max-width:1100px){
@@ -37,6 +57,14 @@
     .main__header-information{
         padding:0 0 100px 0;
     }
+
+    .perspectives__wrapper{
+        padding:0 4% 0 4%;
+    }
+
+    .trainers{
+        padding:0 4% 0 4%;
+    }
 }
 
 @media (max-width:970px){
@@ -49,6 +77,162 @@
 
     .header__nav, .header__phone{
         display:none;
+    }
+
+    .about{
+        padding-left:20px;
+    }
+
+    .packet{
+        padding:0 4% 0 4%;
+    }
+
+    .packet__items{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        margin-top:600px;
+    }
+}
+
+@media (max-width:860px){
+    .count__schools{
+        margin-left:auto;
+    }
+
+    .count__centres{
+        margin-left:auto;
+    }
+
+    .count div{
+        width:300px;
+    }
+
+    .course__footer input, .course__form-button{
+        width:65%;
+    }
+}
+
+@media (max-width:783px){
+    .footer{
+        margin-top:1200px;
+    }
+
+    .packet__items{
+        justify-content: center;
+    }
+
+    .packet > h1{
+        text-align: center;
+    }
+
+    .packet__item{
+        width:500px;
+    }
+}
+
+@media (max-width:780px){
+    .about__descr{
+        font-size:24px;
+    }
+
+    .about .count h1{
+        font-size: 50px;
+    }
+
+    .perspectives h1{
+        font-size: 40px;
+    }
+
+    .perspectives__item h2{
+        font-size:18px;
+    }
+
+    .perspectives__item p{
+        font-size:14px;
+    }
+}
+
+@media (max-width:760px){
+    .course__footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course__information{
+        width:80%;
+        padding-left:0;
+
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .course__form input, .course__form-button{
+        width:90%;
+    }
+}
+
+@media (max-width:680px){
+
+    .about__descr{
+        font-size:20px;
+        padding:0 4% 0 4%;
+    }
+
+    .count h1, .count p, .perspectives__item p{
+        display:block;
+        text-align: center;
+    }
+
+    .count__schools{
+        margin-left:0;
+    }
+
+    .count__centres{
+        margin-left:0;
+    }
+
+    .count div{
+        width: 100%;
+    }
+
+    .perspectives__list{
+        flex-direction: column;
+    }
+
+    .perspectives__item h2{
+        padding-left:10%;
+    }
+
+    .perspectives__item-tooltip{
+        width:130px;
+        height: 26px;
+
+        top:0px;
+        left:35px;
+
+        font-size:9px;
+    }
+
+    .perspectives__item-tooltip h3{
+        padding-top:6px;
+    }
+
+    .trainers__title{
+        text-align: center;
+    }
+
+    .footer__end-text_logo h1{
+        font-size:24px;
+    }
+
+    .footer__end-text_logo p{
+        font-size:14px;
+    }
+
+    .footer__end-phone a{
+        font-size:24px;
     }
 }
 
@@ -63,6 +247,61 @@
         height: 491px;
         top:-92px;
         left:65px;
+    }
+
+    .footer__end{
+        padding:40px 40px 40px 40px;
+    }
+
+    .footer__end-text_logo h1{
+        font-size:18px;
+    }
+
+    .footer__end-text_logo p{
+        font-size:12px;
+    }
+
+    .footer__end-phone a{
+        font-size:14px;
+    }
+}
+
+@media (max-width:550px){
+    .packet__item{
+        width:320px;
+    }
+
+    .packet > h1{
+        font-size:35px;
+    }
+}
+
+@media (max-width:520px){
+    .course__form input, .course__form-button{
+        width:70%;
+    }
+
+    .course__information h1{
+        font-size:30px;
+    }
+
+    .course__information p{
+        font-size:16px;
+    }
+}
+
+@media (max-width:500px){
+    .trainers__title{
+        font-size:36px;
+    }
+
+    .trainers__person img{
+        height:350px;
+    }
+
+    .packet__items-button{
+        width:200px;
+        height:60px;
     }
 }
 
@@ -85,6 +324,38 @@
         height: 390px;
         top:-90px;
         left:35px;
+    }
+
+    .perspectives{
+        margin-top:100px;
+    }
+
+    .packet__item{
+        width:280px;
+    }
+}
+
+@media (max-width:420px){
+    .course__form input, .course__form-button{
+        width:60%;
+    }
+
+    .footer__end-text_logo h1{
+        font-size:14px;
+    }
+
+    .footer__end-text_logo p{
+        font-size:10px;
+    }
+
+    .footer__end-phone a{
+        font-size:11px;
+    }
+}
+
+@media (max-width:360px){
+    .course__form input, .course__form-button{
+        width:50%;
     }
 }
 

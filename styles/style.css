@@ -255,19 +255,6 @@ body{
     margin-top:200px;
 }
 
-.perspectives::before{
-    content:"";
-    background-color:#F9F9F9;
-    
-    position: absolute;
-    width:100%;
-    left:50%;
-    transform: translateX(-50%);
-
-    height:400px;
-    z-index:1;
-}
-
 .perspectives__wrapper{
     position: relative;
     z-index:10;
@@ -413,7 +400,7 @@ body{
 }
 
 .trainers__Constantin{
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .swiper_button-prev{
@@ -466,6 +453,10 @@ body{
 
     display:flex;
     gap:40px;
+}
+
+.packet__items article{
+    height: 530px;
 }
 
 .packet__item{

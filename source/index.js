@@ -5,8 +5,23 @@ const swiper = new Swiper('.trainers__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop:true,
-  slidesPerView:3,
-  spaceBetween:50,
+
+  breakpoints:{
+    900 :{
+      slidesPerView:3,
+      spaceBetween:30,
+    },
+
+    500 :{
+      slidesPerView:2,
+      spaceBetween:30,
+    },
+
+    300 :{
+      slidesPerView:1.5,
+      spaceBetween:30,
+    }
+  },
 
   // And if we need scrollbar
   scrollbar: {
