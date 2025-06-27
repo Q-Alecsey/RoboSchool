@@ -9,10 +9,10 @@ const swiper = new Swiper('.trainers__swiper', {
   breakpoints:{
     900 :{
       slidesPerView:3,
-      spaceBetween:30,
+      spaceBetween:50,
     },
 
-    500 :{
+    501 :{
       slidesPerView:2,
       spaceBetween:30,
     },
@@ -124,18 +124,32 @@ btn_awards.onclick = () => {
 
 //close modal_window
 
-document.querySelector(".dialog__header-close").onclick = () => {
-  modal_window.classList.remove("trainers__dialog-on");
+document.querySelector(".dialog__header-close").onclick = () =>{
+    modal_window.classList.remove("trainers__dialog-on");
 
-  setTimeout(() => {
-    deleteClassForAll(list_btns, "active");
+    setTimeout(() => {
+      deleteClassForAll(list_btns, "active");
 
-    btn_education.classList.add("active");
-    setStyleForAll(list_dialog, "display", "none");
+      btn_education.classList.add("active");
+      setStyleForAll(list_dialog, "display", "none");
 
-    dialog_education.style.display = "block";
-  }, 700);
+      dialog_education.style.display = "block";
+    }, 700);
+}
 
+document.querySelector(".dialog__header-cross").onclick = () =>{
+    modal_window.classList.remove("trainers__dialog-on");
+
+    setTimeout(() => {
+      
+      setStyleForAll(list_dialog, "display", "none");
+      dialog_education.style.display = "block";
+
+      document.querySelectorAll(".dropdown__item").forEach((i) => {i.classList.remove("chosen");});
+      document.querySelector(".dropdown__item").classList.add("chosen");
+
+      document.querySelector(".dropdown__select").textContent = "Образование";
+    }, 700);
 }
 
 //course__form input hover

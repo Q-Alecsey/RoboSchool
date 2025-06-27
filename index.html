@@ -176,8 +176,14 @@
                 <div class="trainers__dialog">
                     <div class="trainers__dialog-wrapper">
 
-                        <div class="dialog__header">
-                            
+                        <button class="dialog__header-cross">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="1.05532" y1="-1.05532" x2="16.6082" y2="-1.05532" transform="matrix(0.681575 0.731748 -0.681575 0.731748 1 2)" stroke="#141024" stroke-width="2.11065" stroke-linecap="round"/>
+                                <line x1="1.05532" y1="-1.05532" x2="16.6082" y2="-1.05532" transform="matrix(0.681575 -0.731748 0.681575 0.731748 1.96094 15)" stroke="#141024" stroke-width="2.11065" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+
+                        <div class="dialog__header">                 
                             <img src="images/trainers/person1.png" alt="person1.png">
                             <div class="dialog__header-info">
                                 <h3>Марина Орлова</h3>
@@ -204,6 +210,17 @@
                             <button class="dialog__tabs-item education active">Образование</button>
                             <button class="dialog__tabs-item experience">Опыт работы</button>
                             <button class="dialog__tabs-item awards">Награды</button>
+                        </div>
+
+                        <div class="dialog__select">
+                            <div class="dropdown">
+                                <button class="dropdown__select">Образование</button>
+                                <ul class="dropdown__items">
+                                    <li value=".dialog__education" class="dropdown__item">Образование</li>
+                                    <li value=".dialog__experience" class="dropdown__item">Опыт работы</li>
+                                    <li value=".dialog__awards" class="dropdown__item">Награды</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="dialog__education">
@@ -358,6 +375,7 @@
     </div>
 
     <script src="./source/swiper-bundle.js"></script>
+    <script src="./source/dropdown.js"></script>
     <script type="module" src="./source/index.js"></script>
 </body>
 </html>

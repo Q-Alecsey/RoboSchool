@@ -1,11 +1,15 @@
 
 
 .trainers__dialog{
+    letter-spacing: 0;
+
+    display: block;
+
     position: fixed;
     top:0px;
     left:0px;
 
-    width:100%;
+    width:100vw;
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.8);
@@ -27,10 +31,11 @@
 
 .trainers__dialog-wrapper{
     position: absolute;
-    left:20%;
+    left:calc((100vw - 1100px)/2);
+    /* left:10vw; */
 
     padding:40px;
-    width:850px;
+    width:1100px;
 
     border-radius: 20px;
     background-color: #fff;
@@ -40,6 +45,16 @@
 }
 
 /* Dialog__Header */
+
+.dialog__header-cross{
+    margin-bottom:10px;
+
+    width:20px;
+    height:20px;
+
+    display:none;
+    margin-left: auto;
+}
 
 .dialog__header{
     display:flex;
@@ -112,7 +127,7 @@
 
 .dialog__tabs{
     display:flex;
-    gap:180px;
+    justify-content: space-around;
 
     margin-top: 40px;
     padding-bottom: 10px;
@@ -135,6 +150,90 @@
 
 .dialog__tabs-item.active{
     color:#D52027;
+}
+
+/* DropDown */
+
+.dialog__select{
+    margin-top:20px;
+    display:none;
+}
+
+.dropdown{
+    position: relative;
+    background-color: #D52027;
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown__select{
+    width:100%;
+    padding:20px 0;
+
+    border-radius: 8px 8px 0 0;
+
+    background-color: #D52027;
+    color:#fff;
+
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: center;
+
+    background-image:url("./../images/responsive/header/Arrow.svg");
+    background-repeat: no-repeat;
+    background-size:50px 20px;
+    background-position: left calc(50% + 70px) center;
+
+    cursor: pointer;
+}
+
+.dropdown__items{
+    display:none;
+    position:absolute;
+    width:100%;
+
+    top:45.59px;
+
+    background-color: #fff;
+
+    z-index: 10;
+}
+
+.dropdown__item{
+    cursor: pointer;
+
+    width:100%;
+    padding:20px 0;
+
+    background-color: #D52027;
+    color:#fff;
+    border:#cf5054 solid 2px;
+    border-bottom:none;
+
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.dropdown__item:last-child {
+    border-radius:0 0 8px 8px;
+}
+
+.dropdown__items.actived{
+    display: block;
+}
+
+.dropdown__item.glowing{
+    background-color: #c93f3f;
+}
+
+.dropdown__item.chosen{
+    background-color: #d67474;
 }
 
 /* Dialog -- content*/
@@ -174,4 +273,97 @@
 
 .dialog__experience, .dialog__awards{
     margin:30px 0 40px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1300px){   
+    .trainers__dialog-wrapper{
+        width:90vw;
+        left:5vw;
+    }
+}
+
+@media (max-width:865px){
+    .dialog__tabs{
+        gap:60px;
+    }
+
+    .dialog__header-info h3{
+        font-size: 20px;
+    }
+
+    .dialog__header-info p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:788px){
+    .dialog__header-close{  
+        width:59px;
+        height: 26px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:600px){
+    .dialog__header-info h3{
+        font-size: 17px;
+    }
+
+    .dialog__header-info p{
+        font-size: 13px;
+    }
+
+    .dialog__header-close{  
+        width:50px;
+        height: 22px;
+        font-size: 13px;
+    }
+
+    .dialog__header img{
+        width:150px;
+        height:208px;
+    }
+}
+
+@media (max-width:510px){
+    .dialog__header-cross{
+        display:block;
+    }   
+
+    .dialog__header-close{
+        display:none;
+    }   
+
+    .dialog__tabs{
+        display:none;
+    }
+
+    .dialog__select{
+        display:block;
+    }
+
+    .dropdown__item, .dropdown__select{
+        padding:10px 0;
+    }
+}
+
+@media (max-width:430px){
+    .dialog__header img{
+        width:110px;
+        height:152px;
+    }
+
+    .dialog__title{
+        font-size:16px;
+    }
+
+    .dialog__education-content{
+        font-size: 14px;
+    }
+
+    .dialog__header{
+        gap:20px;
+    }
 }
