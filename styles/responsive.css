@@ -51,6 +51,14 @@
     .main__header-information p{
         font-size: 18px; 
     }
+
+    .perspectives__item-tooltip{
+        width: 160px;
+    }
+
+    .perspectives__item-tooltip h3{
+        padding-top:0px;
+    }
 }
 
 @media (max-width:1000px){
@@ -175,6 +183,15 @@
     .course__form input, .course__form-button{
         width:90%;
     }
+
+    .perspectives__item-tooltip{
+        width: 130px;
+        font-size:13px;
+    }
+
+    .perspectives__item-tooltip h3{
+        padding-top:0px;
+    }
 }
 
 @media (max-width:680px){
@@ -268,6 +285,10 @@
     .footer__end-phone a{
         font-size:14px;
     }
+
+    .course__footer form{
+        width:100vw;
+    }
 }
 
 @media (max-width:550px){
@@ -282,7 +303,7 @@
 
 @media (max-width:520px){
     .course__form input, .course__form-button{
-        width:70%;
+        width:90%;
     }
 
     .course__information h1{
@@ -340,9 +361,6 @@
 }
 
 @media (max-width:420px){
-    .course__form input, .course__form-button{
-        width:60%;
-    }
 
     .footer__end-text_logo h1{
         font-size:14px;
@@ -357,9 +375,4 @@
     }
 }
 
-@media (max-width:360px){
-    .course__form input, .course__form-button{
-        width:50%;
-    }
-}
 

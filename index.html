@@ -16,9 +16,9 @@
         <section class="top__header">
             <h1 class="header__title">ROBO.SCHOOL</h1>
             <nav class="header__nav">
-                <a href="#" class="decor">О школе</a>
-                <a href="#" class="decor">Тренеры</a>
-                <a href="#" class="decor">Стоимость</a>
+                <a href="#about" class="decor">О школе</a>
+                <a href="#trainers" class="decor">Тренеры</a>
+                <a href="#price" class="decor">Стоимость</a>
             </nav>
             <a href="#" class="header__phone decor">+7 800 000 11 22</a>
             <div class="header__phone-other_btn">
@@ -58,7 +58,7 @@
                     по робототехнике<br> для педагогов 
                     начальной школы
                 </p>
-                <button onclick="func()" class="main__header-button">Записаться на курс</button>
+                <button class="main__header-button">Записаться на курс</button>
             </div>
             <div class="main__header-photos">
                 <img class="main__header-white_circle" src="images/header/white-circle.png" alt="circle.png">
@@ -84,16 +84,16 @@
             </button> 
 
             <div class="header-popup_window-nav">
-                <a href="#" class="decor">О школе</a>
-                <a href="#" class="decor">Тренеры</a>
-                <a href="#" class="decor">Стоимость</a>
+                <a href="#about" class="popup-nav decor">О школе</a>
+                <a href="#trainers" class="popup-nav decor">Тренеры</a>
+                <a href="#price" class="popup-nav decor">Стоимость</a>
             </div>
      
     </div>
 
     <main class="main">
         <div class="container">
-            <section class="about">
+            <section id="about" class="about">
                 <h1 class="about__descr"><span class="highlight__descr">Robo School - </span>учреждение для 
                     формирования кадрового<br> педагогического резерва в 
                     сфере робототехники<br> и программирования
@@ -170,7 +170,7 @@
                 </div>
             </section>
 
-            <section class="trainers">
+            <section id="trainers" class="trainers">
                 <h1 class="trainers__title">Профессиональные тренеры</h1>
 
                 <div class="trainers__dialog">
@@ -314,7 +314,7 @@
                 </article>
             </section>
 
-            <section class="packet">
+            <section id="price" class="packet">
                 <h1>Выберите нужный пакет</h1>
 
                 <div class="packet__items">
@@ -355,10 +355,10 @@
             </div>
             <div class="course__form">
                 <form action="">
-                    <input type="text" class="course__form-name" placeholder="Имя">
-                    <input type="text" class="course__form-phone" placeholder="Телефон">
-                    <input type="text" class="course__form-gmail" placeholder="E-mail"> 
-                    <button class="course__form-button">Оформить заявку</button>
+                    <input required pattern="^[а-яёА-ЯЁ]+$" maxlength="20" type="text" class="course__form-name" placeholder="Имя">
+                    <input required pattern="^8\d{10}$" maxlength="11" type="phone" class="course__form-phone" placeholder="Телефон">
+                    <input required pattern="^.+@.+\..+$" type="email" class="course__form-gmail" placeholder="E-mail"> 
+                    <button type="button" class="course__form-button">Оформить заявку</button>
                 </form>
             </div>
         </div>        

@@ -32,7 +32,6 @@
 .trainers__dialog-wrapper{
     position: absolute;
     left:calc((100vw - 1100px)/2);
-    /* left:10vw; */
 
     padding:40px;
     width:1100px;
@@ -41,7 +40,7 @@
     background-color: #fff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
-    margin: 50px 0;
+    margin: 25px 0;
 }
 
 /* Dialog__Header */

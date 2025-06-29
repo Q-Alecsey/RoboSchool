@@ -157,7 +157,7 @@ document.querySelector(".dialog__header-cross").onclick = () =>{
 const input = document.querySelectorAll('.course__form input')[1];
 
 input.addEventListener('mouseover', () => {
-  input.placeholder = '+7(___)___-__-__';
+  input.placeholder = '8___ ___ __ __';
 });
 
 input.addEventListener('mouseout', () => {
@@ -165,5 +165,69 @@ input.addEventListener('mouseout', () => {
 });
 
 
+//header__button-other соединяем с popup window
 
+const button__other = document.querySelector('.header__button-other');
+const popup__window = document.querySelector('.header-popup_window');
+const header_close = document.querySelector('.header-close');
+
+button__other.addEventListener("click",function() { 
+    popup__window.classList.toggle("actived");
+});
+
+header_close.addEventListener("click", function() { 
+
+    popup__window.style.transition = "transform 0.5s ease"; 
+    
+    popup__window.classList.toggle("actived");
+    
+    setTimeout(() => {  
+      popup__window.style.transition = "";
+    }, 500);
+});
+
+//подключение навигации в popup-window
+
+document.querySelectorAll(".popup-nav").forEach(function(item){
+    item.addEventListener("click", () => {
+        popup__window.classList.toggle("actived");
+    });
+});
+
+//Скролл до footer из Price
+
+document.querySelectorAll(".packet__items button").forEach((item) => {
+    item.addEventListener("click", () => {
+        document.querySelector(".footer").scrollIntoView();
+    });
+});
+
+//Подключение input-ов к кнопке course__form  ВАЛИДАЦИЯ
+
+const form_name = document.querySelector(".course__form-name");
+const form_phone = document.querySelector(".course__form-phone");
+const form_gmail = document.querySelector(".course__form-gmail");
+
+const regExp_name = /^[а-яёА-ЯЁ]+$/;
+const regExp_phone = /^^8\d{10}$/;
+const regExp_gmail = /^.+@.+\..+$/;
+
+const form_button = document.querySelector(".course__form-button");
+
+form_button.addEventListener("click", () => {
+  
+    let hasError = false;
+
+    if (regExp_name.test(form_name.value)){
+        
+        if (regExp_phone.test(form_phone.value)){
+
+            if (regExp_gmail.test(form_gmail.value)){
+
+                alert("Ваша заявка успешно принята!")
+            }
+        }
+    }
+    
+});
 
